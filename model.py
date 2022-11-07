@@ -84,12 +84,13 @@ print('Test accuracy: ',score[1])
 model.save('DigitRecognizer')
 print("Saving the model as DigitRecognizer")
 
+
+#checking some predictions
 m, n, x, y = x_train.shape
 
 fig, axes = plt.subplots(8,8, figsize=(5,5))
 fig.tight_layout(pad=0.13,rect=[0, 0.03, 1, 0.91])
 
-#checking some predictions
 for i,ax in enumerate(axes.flat):
 
     random_index = np.random.randint(m)
