@@ -100,7 +100,7 @@ for i,ax in enumerate(axes.flat):
     prediction_p = tf.nn.softmax(prediction)
     y_pred = np.argmax(prediction_p)
     
-    ax.set_title(f"{y_train[random_index]},{y_pred}",fontsize=10)
+    ax.set_title(f"{np.argmax(y_train[random_index]},{y_pred}",fontsize=10)
     ax.set_axis_off()
 fig.suptitle("Label, y_pred", fontsize=14)
 plt.show()
